@@ -55,3 +55,6 @@ resource "aws_ses_domain_mail_from" "_" {
   mail_from_domain = "bounce.${aws_ses_domain_identity._.domain}"
 }
 
+resource "aws_ses_email_identity" "noreply" {
+  email = "noreply@${var.domain}"
+}
