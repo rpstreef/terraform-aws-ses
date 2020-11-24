@@ -1,4 +1,4 @@
-variable "route_53_zone_id" {
+variable "route53_zone_id" {
   description = "Zone ID value of the Route53 Hosted Zone"
 }
 

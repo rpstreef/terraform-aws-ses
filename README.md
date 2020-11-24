@@ -10,9 +10,9 @@ To get the latest version, use the ``master`` branch, otherwise use the ``?ref=`
 
 ```terraform
 module "ses" {
-  source = "github.com/rpstreef/terraform-aws-ses?ref=v1.1"
+  source = "github.com/rpstreef/terraform-aws-ses?ref=v1.0"
 
-  route_53_zone_id = "Z141234029XXPUKGZ57OJ"
+  route53_zone_id = "Z141234029XXPUKGZ57OJ"
   domain           = "somedomain.com"
 }
 ```

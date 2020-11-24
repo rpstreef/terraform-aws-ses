@@ -13,7 +13,7 @@ resource "aws_route53_record" "dkim" {
 }
 
 resource "aws_route53_record" "verification" {
-  zone_id = var.route_53_zone_id
+  zone_id = var.route53_zone_id
   name    = "_amazonses.${aws_ses_domain_identity._.id}"
   type    = "TXT"
   ttl     = "600"
@@ -21,7 +21,7 @@ resource "aws_route53_record" "verification" {
 }
 
 resource "aws_route53_record" "mx" {
-  zone_id = var.route_53_zone_id
+  zone_id = var.route53_zone_id
   name    = aws_ses_domain_mail_from._.mail_from_domain
   type    = "MX"
   ttl     = "600"
@@ -29,7 +29,7 @@ resource "aws_route53_record" "mx" {
 }
 
 resource "aws_route53_record" "txt" {
-  zone_id = var.route_53_zone_id
+  zone_id = var.route53_zone_id
   name    = aws_ses_domain_mail_from._.mail_from_domain
   type    = "TXT"
   ttl     = "600"
