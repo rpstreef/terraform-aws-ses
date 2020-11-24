@@ -16,3 +16,11 @@ module "ses" {
   domain           = "somedomain.com"
 }
 ```
+
+## Change log
+
+### v1.1
+  - Added standard ``noreply`` from address, you can gets the ``arn`` and email address string from the ``outputs.tf`` of this module.
+
+### v1.0
+- Initial release
